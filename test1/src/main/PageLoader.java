@@ -28,5 +28,12 @@ public class PageLoader {
 		
 	}
 	
+	
+	private String getMoviesPage() {
+		
+		return pageTemplatesDir + fileSeperator + "movies";
+		
+	}
+	
 
 }
