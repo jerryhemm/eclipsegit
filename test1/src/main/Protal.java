@@ -13,9 +13,17 @@ public class Protal {
 
 	
 	@RequestMapping(value="/")
-	public String home(HttpServletRequest request, Model model) {
+	public String gotoHomePage(HttpServletRequest request, Model model) {
 		
 		return new PageLoader().getPage("home", request, model);
+		
+	}
+	
+	
+	@RequestMapping(value="movies")
+	public String gotoMoviesPage(HttpServletRequest request, Model model) {
+		
+		return new PageLoader().getPage("movies", request, model);
 		
 	}
 	

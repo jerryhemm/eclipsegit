@@ -15,7 +15,9 @@ public class PageLoader {
 	
 	public String getPage(String pageName, HttpServletRequest request, Model model) {
 		
-		
+		if (pageName.equals("movies")) {
+			return getMoviesPage();
+		}
 		
 		return getHomePage();
 		
